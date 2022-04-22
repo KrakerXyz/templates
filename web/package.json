@@ -11,7 +11,7 @@
     "scripts": {
         "start": "vite",
         "build": "vite build",
-        "lint": "vue-tsc --noEmit"
+        "lint": "eslint src/**/*.{ts,vue} && vue-tsc --noEmit"
     },
     "dependencies": {
         "vue": "^3.1.1",
