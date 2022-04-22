@@ -13,6 +13,28 @@
         <div id="app"></div>
 
         <script type="module" src="/src/main.ts"></script>
+
+        <!-- https://cdnjs.com/libraries/monaco-editor/0.33.0 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/loader.min.js" integrity="sha512-O9SYDgWAM3bEzit1z6mkFd+dxKUplO/oB8UwYGAkg2Zy/WzDUQ2mYA/ysk3c0CxiXAN4u8T9JeZ0Ahk2Jj/33Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            require.config({
+                paths: {
+                    vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs',
+                },
+            });
+
+            window.MonacoEnvironment = {
+                getWorkerUrl: function (workerId, label) {
+                    return `data:text/javascript;charset=utf-8,${encodeURIComponent(`
+                            self.MonacoEnvironment = {
+                              baseUrl: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/'
+                            };
+                            importScripts('https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/base/worker/workerMain.js');`)}`;
+                },
+            };
+        </script>
+
     </body>
 
 </html>
