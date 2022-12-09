@@ -1,0 +1,36 @@
+{
+    "cSpell.words": [
+        "ARGB",
+        "cooldown",
+        "eitmuf",
+        "fastify",
+        "fastled",
+        "gapi",
+        "googleusercontent",
+        "heatramp",
+        "icdocd",
+        "joshkrak",
+        "Leds",
+        "multiline",
+        "netled",
+        "parameterless",
+        "pino",
+        "prestart",
+        "raspi",
+        "referrerpolicy",
+        "rpio",
+        "ttsc",
+        "ttypescript",
+        "typecheck",
+        "vetur"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "vue",
+        "html"
+    ]
+}
