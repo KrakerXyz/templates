@@ -1,19 +1,20 @@
 
 <template>
-   <div>
-      Home
-   </div>
+    <div>
+        Home {{ count }}
+    </div>
 </template>
 
 <script lang="ts">
 
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
     props: {
     },
     setup() {
-        return {};
+        const count = ref(0);
+        return { count };
     }
 });
 
