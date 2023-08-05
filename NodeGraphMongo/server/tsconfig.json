@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "NodeNext",
+        "strict": true,
+        "sourceMap": true,
+        "declaration": true,
+        "noImplicitReturns": true,
+        "noEmitOnError": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "removeComments": true,
+        "outDir": "dist",
+        "types": [
+            "jest",
+        ],
+        "lib": [
+            "ESNext"
+        ]
+    },
+    "include": [
+        "src/**/*",
+        "../core/src/**/*"
+    ],
+    "exclude": [
+        "src/**/*.spec.ts",
+        "../core/src/**/*.spec.ts"
+    ]
+}

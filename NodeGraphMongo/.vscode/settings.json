@@ -7,10 +7,9 @@
     "eslint.validate": [
         "javascript",
         "typescript",
-        "vue",
-        "html"
     ],
     "cSpell.words": [
-        "vitejs"
+        "graphiql",
+        "mercurius"
     ]
 }
