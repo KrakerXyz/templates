@@ -1,9 +1,8 @@
 
-import { Db, UpdateResult } from './Db.js';
+import { Db, type UpdateResult } from './Db.js';
 import { jsonSchema } from '../services/jsonSchema.js';
-import { Model } from '../../../core/src/type/model.js';
-import { Writeable } from '../../../core/src/utility/Writeable.js';
-import { Id } from '../../../core/src/type/Id.js';
+import { type Model } from '../../../core/src/type/model.js';
+import { type Writeable, type Id } from '@krakerxyz/utility';
 
 export class ModelDb {
     private static _entity: Db<Model>;

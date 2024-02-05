@@ -1,10 +1,10 @@
 import 'dotenv/config.js';
-import fastify from 'fastify';
 import mercurius from 'mercurius';
 import { GraphQLInt, GraphQLObjectType, GraphQLSchema } from 'graphql';
 import { configureDbLocal } from './db/Db.js';
 import { ModelDb } from './db/ModelDb.js';
-import { newId } from '../../core/src/utility/newId.js';
+import { newId } from '@krakerxyz/utility';
+import fastify from 'fastify';
 
 console.log('Configuring db');
 configureDbLocal({
