@@ -1,29 +1,16 @@
 {
+    "extends": "../tsconfig.base.json",
     "compilerOptions": {
-        "target": "ESNext",
         "module": "NodeNext",
-        "strict": true,
-        "sourceMap": true,
-        "declaration": true,
-        "noImplicitReturns": true,
-        "noEmitOnError": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "removeComments": true,
+        "moduleResolution": "nodenext",
         "outDir": "dist",
-        "types": [
-            "jest",
-        ],
-        "lib": [
-            "ESNext"
-        ]
     },
     "include": [
         "src/**/*",
-        "../core/src/**/*"
+        "../core/src/**/*",
     ],
     "exclude": [
         "src/**/*.spec.ts",
-        "../core/src/**/*.spec.ts"
-    ]
+        "../core/src/**/*.spec.ts",
+    ],
 }

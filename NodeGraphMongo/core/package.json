@@ -1,6 +1,6 @@
 {
     "type": "module",
-    "dependencies": {
-        "@krakerxyz/utility": "^1.0.1"
+    "peerDependencies": {
+        "@krakerxyz/utility": "^1.0.0"
     }
 }

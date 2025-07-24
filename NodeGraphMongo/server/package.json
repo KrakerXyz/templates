@@ -28,8 +28,6 @@
         "ts-json-schema-generator": "^1.2.0"
     },
     "devDependencies": {
-        "@types/jest": "^29",
-        "jest": "^29",
         "pino-pretty": "^10",
         "rimraf": "^5",
         "typescript": "^5"
